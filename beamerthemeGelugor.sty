@@ -33,7 +33,8 @@
 }
 
 \setbeamertemplate{footline}[text line]{%
-\insertshortauthor\strut\hfill\insertshorttitle\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber}
+%\insertshortauthor\strut\hfill\insertshorttitle\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber}
+\insertshortauthor\strut\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber}
 
 \addtobeamertemplate{frametitle}{}{%
 \begin{pgfpicture}
@@ -98,7 +99,6 @@
 \pgfpathrectanglecorners{\pgfpoint{.15\paperwidth}{-.19\paperheight}}{\pgfpoint{\paperwidth}{-.24\paperheight}}
 \pgfsetfillcolor{YNUBlack}
 \pgfusepath{fill}
-
 % A stroke down the middle
 \pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.19\paperheight}}
 \pgfpathlineto{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
