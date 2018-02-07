@@ -14,7 +14,9 @@
 
 \ProvidesPackage{beamerthemeGelugor}[2011/09/20]
 
-\definecolor{YNUBlack}{RGB}{255,255,255}
+\definecolor{YNUBlack}{RGB}{0,0,0}
+\definecolor{YNUWhite}{RGB}{255,255,255}
+\definecolor{YNUao}{RGB}{72,215,254}
 \definecolor{YNUBlue}{RGB}{0,82,176}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -34,7 +36,7 @@
 
 \setbeamertemplate{footline}[text line]{%
 %\insertshortauthor\strut\hfill\insertshorttitle\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber}
-\insertshortauthor\strut\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber}
+\insertshortauthor\strut\hfill{Master thesis defense}\hfill\insertshortdate\hspace{1em}\insertframenumber/\inserttotalframenumber}
 
 \addtobeamertemplate{frametitle}{}{%
 \begin{pgfpicture}
@@ -46,14 +48,14 @@
 \pgfpathlineto{\pgfpoint{.15\paperwidth}{-\beamer@headheight}}
 \pgfsetlinewidth{3.5pt}
 \pgfsetinnerlinewidth{1pt}
-\pgfsetinnerstrokecolor{YNUBlack}
+\pgfsetinnerstrokecolor{YNUao}
 \pgfsetcolor{white}
 \pgfusepath{stroke}
 \pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.23\paperheight}}
 \pgfpathlineto{\pgfpoint{.15\paperwidth}{-.97\paperheight}}
 \pgfsetlinewidth{1pt}
 \pgfsetinnerlinewidth{0pt}
-\pgfsetcolor{YNUBlack}
+\pgfsetcolor{YNUao}
 \pgfusepath{stroke}
 \pgftext[at=\pgfpoint{.075\paperwidth}{-.97\paperheight},center,base]{\pgfuseimage{small-logo}}
 \end{pgfpicture}%
@@ -97,14 +99,14 @@
 
 % Followed by orange bar on right
 \pgfpathrectanglecorners{\pgfpoint{.15\paperwidth}{-.19\paperheight}}{\pgfpoint{\paperwidth}{-.24\paperheight}}
-\pgfsetfillcolor{YNUBlack}
+\pgfsetfillcolor{YNUao}
 \pgfusepath{fill}
 % A stroke down the middle
 \pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.19\paperheight}}
 \pgfpathlineto{\pgfpoint{.15\paperwidth}{-.24\paperheight}}
 \pgfsetlinewidth{3.5pt}
 \pgfsetinnerlinewidth{1pt}
-\pgfsetinnerstrokecolor{YNUBlack}
+\pgfsetinnerstrokecolor{YNUao}
 \pgfsetrectcap
 \pgfsetcolor{white}
 \pgfusepath{stroke}
@@ -113,7 +115,7 @@
 \pgfpathlineto{\pgfpoint{.15\paperwidth}{-.45\paperheight}}
 \pgfsetlinewidth{1pt}
 \pgfsetinnerlinewidth{0pt}
-\pgfsetcolor{YNUBlack}
+\pgfsetcolor{YNUao}
 \pgfusepath{stroke}
 
 \pgfpathmoveto{\pgfpoint{.15\paperwidth}{-.55\paperheight}}
@@ -151,9 +153,9 @@
 \usecolortheme[named=YNUBlack]{structure}
 \usecolortheme{rose}
 \setbeamercolor{title page}{fg=white}
-\setbeamercolor{logo}{bg=YNUBlack}
-\setbeamercolor{frametitle}{fg=YNUBlack,bg=YNUBlue}
-\setbeamercolor{section in sidebar}{fg=YNUBlack}
+\setbeamercolor{logo}{bg=YNUWhite}
+\setbeamercolor{frametitle}{fg=YNUWhite,bg=YNUBlue}
+\setbeamercolor{section in sidebar}{fg=YNUao}
 \setbeamerfont{section in sidebar}{series=\bfseries}
 \setbeamercolor{block title}{bg=YNUBlue!28!white,fg=YNUBlue}
 \setbeamercolor{block body}{bg=YNUBlack!15!white}
@@ -166,7 +168,7 @@
 \pgftransformyshift{5.5pt}
 \DoPurpleBackground
 \pgftext[at=\pgfpoint{.5\paperwidth}{-.5\paperheight},center,center]{\pgfuseimage{white-logo}}
-\pgftext[at=\pgfpoint{.5\paperwidth}{-.3\paperheight},center,center]{\huge\structure{Thank You}}
+\pgftext[at=\pgfpoint{.5\paperwidth}{-.3\paperheight},center,center]{\huge\structure{\textcolor{white}{Thank You}}}
 \end{pgfpicture}
 \end{frame}
 }

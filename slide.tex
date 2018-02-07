@@ -2,15 +2,27 @@
 \usetheme{Gelugor}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
+\usepackage{newtxtext,newtxmath}
 %% Use any fonts you like.
 \usepackage{helvet}
+\usepackage{graphicx}	
+\usepackage{amsmath,bbm}
+\usepackage[draft]{pdfcomment}
 
-\title{Template for YNU}
-\subtitle{Presentations in Latex Beamer}
-\author{Tianji Shen}
-\date{\today}
-\institute{\url{shin@ochiailab.com}}
+
+% reference package
+%\usepackage[style=ieee]{biblatex} % If you want use bibtex, you can use \footfullcite{Bibtexkey} command
+%\addbibresource{citation.bib} % add your bibtex library here
+%\setbeamerfont{footnote}{size=\tiny}
+
+\title{\large \textcolor{white}{Template for YNU}}
+\subtitle{Template for Ochiailab}
+\author{{\bf Author:}Tianji Shen~~~~{\bf Supervisor:}Prof. Hideki Ochiai}
+\date{Feb. 15, 2018}
+\institute{Dept. of Electrical and Computing Engineering\\
+Yokohama National University}
+
+
 
 \begin{document}
 
@@ -18,55 +30,66 @@
 \titlepage
 \end{frame}
 
+%outline
+\begin{frame}{Table of contents}
+  \tableofcontents
+\end{frame}
 
-\section{Introduction}
-\begin{frame}
-\frametitle{A Frame}
-\framesubtitle{Bullet points}
-\begin{itemize}
-\item First thing
-	\begin{itemize}
-	\item small point
-	\item fine print
-	\end{itemize}
-\item Second thing
-	\begin{enumerate}
-	\item point 1
-	\end{enumerate}
-\item Third thing
-	\begin{description}
-	\item[Research] the scientific pursuit for knowledge
-	\end{description}
-\end{itemize}
+
+
+\begin{frame}{Background}
+ \frametitle{A Frame}
+ \framesubtitle{Bullet points}
+ \begin{itemize}
+  \item First thing
+        \begin{itemize}
+         \item small point
+         \item fine print
+        \end{itemize}
+  \item Second thing
+        \begin{enumerate}
+         \item point 1
+        \end{enumerate}
+  \item Third thing
+        \begin{description}
+         \item[Research] the scientific pursuit for knowledge
+        \end{description}
+ \end{itemize}
 \end{frame}
 
 \subsection{Text}
 \begin{frame}
 \frametitle{Another Frame}
-Test for a new frame.
-\end{frame}
+ Test for a new frame.
+ \end{frame}
 
-\subsection{Blocks}
-\begin{frame}
-\frametitle{Blocks}
-\begin{definition}[Greetings]
-Hello World
-\end{definition}
+ \subsection{Blocks}
+ \begin{frame}
+ \frametitle{Blocks}
+ \begin{definition}[Greetings]
+ Hello World
+ \end{definition}
 
-\begin{theorem}[Fermat's Last Theorem]
-$a^n + b^n = c^n, n \leq 2$
-\end{theorem}
+  \begin{theorem}[Fermat's Last Theorem]
+   $a^n + b^n = c^n, n \leq 2$
+  \end{theorem}
 
-\begin{alertblock}{Uh-oh.}
-By the pricking of my thumbs.
-\end{alertblock}
+  \begin{alertblock}{Uh-oh.}
+   By the pricking of my thumbs.
+  \end{alertblock}
 
-\begin{exampleblock}{Uh-oh.}
-Something evil this way comes.
-\end{exampleblock}
+  \begin{exampleblock}{Uh-oh.}
+   Something evil this way comes.
+  \end{exampleblock}
 
-\end{frame}
+ \end{frame}
 
 \ThankYouFrame
+
+
+
+
+    % \bibliographystyle{IEEEtran}
+    % \bibliography{citation}
 
 \end{document}
